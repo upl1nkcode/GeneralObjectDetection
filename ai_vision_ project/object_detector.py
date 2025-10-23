@@ -55,7 +55,7 @@ class ObjectDetector:
             cv2.imshow(window_name, annotated)
 
             # Add delay to match frame rate (~25 ms = ~40 FPS)
-            if cv2.waitKey(10) & 0xFF == ord('q'):
+            if cv2.waitKey(2) & 0xFF == ord('q'):
                 break
 
         cap.release()
@@ -69,7 +69,7 @@ class ObjectDetector:
             return
 
         cv2.namedWindow("Webcam Detection", cv2.WINDOW_NORMAL)
-        #cv2.resizeWindow("Webcam Detection", 960, 540)
+        cv2.resizeWindow("Webcam Detection", 960, 540)
         print("🎥 Press 'q' to quit webcam mode.")
 
         while True:
