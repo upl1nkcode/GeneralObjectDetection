@@ -2,7 +2,7 @@ from ultralytics import YOLO
 import cv2
 
 # Load pretrained YOLOv8 model (Nano = fastest)
-model = YOLO("yolov8n.pt")
+model = YOLO("yolov8s.pt")
 
 # Open webcam
 cap = cv2.VideoCapture(0)
